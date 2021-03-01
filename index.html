@@ -1,119 +1,306 @@
 <html>
 <head>
-  <title>PEEPO CLOCK</title>
+<title>James Twose Curriculum Vitae</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace"
-  rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800"
-  rel="stylesheet">
-  <script src="main.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-  <div class="page">
-    <header>
-      <h1> Peepo Clock </h1>
-    </header>
 
-    <h4>
-      Gimme time pls <br>
-      <span id="clock">Clock goes here</span>
-    </h4>
+<!-- header section -->
+<section id="header">
+<div class="container text-center">
+<div class="user-box">
+<img src="img/user-1.png">
+<h1>James Twose</h1>
+<p>Data Scientist</p>
+</div>
+</div>
+<div class="scroll-btn">
+<div class="scroll-bar"><a href="#about"><span></span></a></div>
+</div>
+</section>
 
-    <img id='peepoImage' src="https://pbs.twimg.com/profile_images/1041173628300095491/JZj29ahl_400x400.jpg" alt="peepo">
-    <blockquote id="timeEvent">This is where time events are reported</blockquote>
-
-    set Wake Up Time
-    <select id="wakeUpTimeSelector">
-      <option value="1">1 AM - 2AM</option>
-      <option value="2">2 AM - 3AM</option>
-      <option value="3">3 AM - 4AM</option>
-      <option value="4">4 AM - 5AM</option>
-      <option value="5">5 AM - 6AM</option>
-      <option value="6">6 AM - 7AM</option>
-      <option value="7">7 AM - 8AM</option>
-      <option value="8" selected>8 AM - 9AM</option>
-      <option value="9">9 AM - 10AM</option>
-      <option value="10">10 AM - 11AM</option>
-      <option value="11">11 AM - 12PM</option>
-      <option value="12">12 PM - 1PM</option>
-      <option value="13">1 PM - 2PM</option>
-      <option value="14">2 PM - 3PM</option>
-      <option value="15">3 PM - 4PM</option>
-      <option value="16">4 PM - 5PM</option>
-      <option value="17">5 PM - 6PM</option>
-      <option value="18">6 PM - 7PM</option>
-      <option value="19">7 PM - 8PM</option>
-      <option value="20">8 PM - 9PM</option>
-      <option value="21">9 PM - 10PM</option>
-      <option value="22">10 PM - 11PM</option>
-      <option value="23">11 PM - 12AM</option>
-      <option value="24">12 AM - 1AM</option>
-    </select>
-    <br>
-    set Lunch Time
-    <select id="lunchTimeSelector">
-      <option value="1">1 AM - 2AM</option>
-      <option value="2">2 AM - 3AM</option>
-      <option value="3">3 AM - 4AM</option>
-      <option value="4">4 AM - 5AM</option>
-      <option value="5">5 AM - 6AM</option>
-      <option value="6">6 AM - 7AM</option>
-      <option value="7">7 AM - 8AM</option>
-      <option value="8">8 AM - 9AM</option>
-      <option value="9">9 AM - 10AM</option>
-      <option value="10">10 AM - 11AM</option>
-      <option value="11">11 AM - 12PM</option>
-      <option value="12" selected>12 PM - 1PM</option>
-      <option value="13">1 PM - 2PM</option>
-      <option value="14">2 PM - 3PM</option>
-      <option value="15">3 PM - 4PM</option>
-      <option value="16">4 PM - 5PM</option>
-      <option value="17">5 PM - 6PM</option>
-      <option value="18">6 PM - 7PM</option>
-      <option value="19">7 PM - 8PM</option>
-      <option value="20">8 PM - 9PM</option>
-      <option value="21">9 PM - 10PM</option>
-      <option value="22">10 PM - 11PM</option>
-      <option value="23">11 PM - 12AM</option>
-      <option value="24">12 AM - 1AM</option>
-    </select>
-    <br>
-    set Nap Time
-    <select id="napTimeSelector">
-      <option value="1">1 AM - 2AM</option>
-      <option value="2">2 AM - 3AM</option>
-      <option value="3">3 AM - 4AM</option>
-      <option value="4">4 AM - 5AM</option>
-      <option value="5">5 AM - 6AM</option>
-      <option value="6">6 AM - 7AM</option>
-      <option value="7">7 AM - 8AM</option>
-      <option value="8">8 AM - 9AM</option>
-      <option value="9">9 AM - 10AM</option>
-      <option value="10">10 AM - 11AM</option>
-      <option value="11">11 AM - 12PM</option>
-      <option value="12">12 PM - 1PM</option>
-      <option value="13">1 PM - 2PM</option>
-      <option value="14">2 PM - 3PM</option>
-      <option value="15" selected>3 PM - 4PM</option>
-      <option value="16">4 PM - 5PM</option>
-      <option value="17">5 PM - 6PM</option>
-      <option value="18">6 PM - 7PM</option>
-      <option value="19">7 PM - 8PM</option>
-      <option value="20">8 PM - 9PM</option>
-      <option value="21">9 PM - 10PM</option>
-      <option value="22">10 PM - 11PM</option>
-      <option value="23">11 PM - 12AM</option>
-      <option value="24">12 AM - 1AM</option>
-    </select>
-    <br>
-    <button id="partyTimeButton"> Party! </button>
-
-    <footer>
-      <p>&copy;Itsamejms 2021</p>
-    </footer>
+<!-- User-info section -->
+<section id = "user-info">
+<div class="nav-bar">
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#top">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </li>
+    </ul>
   </div>
+</nav>
+</div>
 
-  <script type="text/javascript" src="main.js"></script>
+<!-- About Me -->
+<div class="about container" id="about">
+<div class="row">
+<div class="col-md-6 text-center">
+<img src="img/user-2.png" class="profile-img">
+</div>
+<div class="col-md-6">
+<h3>WHO AM I?</h3>
+<p>
+  Current Research Master of Behavioural Science student, researching the link
+  between psychopathy, empathy and moral decision making by constructing a moderation
+  model of the constructs of interest and by capturing the dynamics of Galvanic
+  Skin Response whilst rating moral images. The analytical techniques being
+  employed in this research are a Structural Equation Model (SEM), and Recurrence
+  Quantification Analysis (RQA). Both of these analyses are being run in R,
+  due to the Research Master teaching statistics predominantly in this software.
+  I would love to be accepted for a Behavioural Science Joint PhD scholarship,
+  because I would really enjoy following my passion of capturing the dynamics of
+  facial expressions to better understand how we portray, and try to hide, emotion.
+</p>
+<div class="skills-bar">
+<p>Python for Data Science</p>
+<div class="progress">
+<div class="progress-bar" style="width: 80%;">80%</div>
+</div>
+
+<p>R programming</p>
+<div class="progress">
+<div class="progress-bar" style="width: 85%;">85%</div>
+</div>
+
+<p>Linux understanding</p>
+<div class="progress">
+<div class="progress-bar" style="width: 60%;">60%</div>
+</div>
+
+<p>Experience with AWS and SQL</p>
+<div class="progress">
+<div class="progress-bar" style="width: 70%;">70%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Social Icons -->
+<div class="social-icons">
+<ul>
+<a href="https://www.linkedin.com/in/james-twose-a99b4411a/"><li><i class="fa fa-linkedin"></i></li></a>
+<a href="https://twitter.com/uketwose"><li><i class="fa fa-twitter"></i></li></a>
+<a href="https://github.com/jameshtwose"><li><i class="fa fa-github"></i></li></a>
+<a href="https://scholar.google.com/citations?user=9KdO6XMAAAAJ&hl=en&oi=ao"><li><i class="fa fa-google"></i></li></a>
+</ul>
+</div>
+
+
+<!-- Curriculum Vitae -->
+
+<div class="cv" id="cv">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h3 class="text-center">My Experience</h3>
+<ul class="timeline">
+<li>
+<h4><span>2018 - </span> Data Scientist</h4>
+<p>
+Applying nonlinear time series analysis to keystroke dynamics for
+a company called "Neurocast".<br>
+<b>Company</b> - Neurocast<br>
+<b>Duration</b> - 3yr [2018 to Present]<br>
+<b>Location</b> - Amsterdam, Netherlands
+</p>
+</li>
+
+<li>
+<h4><span>2016 - </span> International Baccalaureate MYP Tutor (part time)</h4>
+<p>
+Personal tutor for 12-year-old boy (mathematics and English language and
+literature).<br>
+<b>Company</b> - Freelance<br>
+<b>Duration</b> - 1yr [2016 to 2017]<br>
+<b>Location</b> - Utrecht, Netherlands
+</p>
+</li>
+
+<li>
+<h4><span>2015 - </span> Internship at the College ter Beoordeling van
+  Geneesmiddelen (CBG) (medicines evaluation board)</h4>
+<p>
+Work involved creating a functioning medicines database; researching vector
+autoregressions as a possibility to predict adverse events; researching
+scientific advices with the aim of changing the protocol the CBG uses to
+regulate antidepressants.<br>
+<b>Company</b> - CBG-MEB<br>
+<b>Duration</b> - 1yr [2015 to 2016]<br>
+<b>Location</b> - Utrecht, Netherlands
+</p>
+</li>
+
+<li>
+<h4><span>2015 - </span> Research project at UCR (part time)</h4>
+<p>
+Measuring perceived stress levels, coping strategies and physiological
+correlates in UCR students at times of high and low workload: Selected
+to undertake this study for the management of University College Roosevelt
+to influence policy decisions on the protocol the university uses to combat
+stress in students.
+<br>
+<b>Company</b> - University College Roosevelt<br>
+<b>Duration</b> - 1yr [2015 to 2016]<br>
+<b>Location</b> - Middelburg, Netherlands
+</p>
+</li>
+
+</ul>
+</div>
+
+<div class="col-md-6">
+<h3 class="text-center">My Education</h3>
+<ul class="timeline">
+<li>
+<h4><span>2016 - </span> Research Master - Behavioural Science</h4>
+<p>
+With a special interest in the Dynamics of Complex systems, especially with
+regards to the quantification of nonlinear time series.<br>
+<b>Institute</b> - Radboud University<br>
+<b>Duration</b> - 2yr [2016 to 2018]<br>
+<b>Location</b> - Nijmegen, Netherlands
+</p>
+</li>
+
+<li>
+<h4><span>2013 - </span> Bachelor of Science - Liberal Arts and Sciences</h4>
+<p>
+Major in Cognitive Science and Life Science with a Minor in Psychology.<br>
+<b>Institute</b> - University College Roosevelt (UCR), Netherlands (part of Utrecht University)<br>
+<b>Duration</b> - 3yr [2013 to 2016]<br>
+<b>Location</b> - Middelburg, Netherlands
+</p>
+</li>
+
+<li>
+<h4><span>2010 - </span> International Baccalaureate</h4>
+<p>
+Courses: Mathematics, French, English, Physics, Chemistry, Psychology.
+<br>
+<b>Company</b> - Havant College<br>
+<b>Duration</b> - 2yr [2010 to 2012]<br>
+<b>Location</b> - Havant, UK
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Services -->
+<div class="services" id="services">
+<div class="container">
+<h1 class="text-center">My Offered Services</h1>
+<p class="text-center">
+Freelance data science work.
+</p>
+
+<div class="row">
+<div class="col-md-4">
+<div class="services-box">
+<i class="fa fa-rocket"></i><span>Data Science</span>
+<p>
+Regression, Classification, Frequentist Statistics, Machine Learning,
+Nonlinear Time-Series Analysis.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="services-box">
+<i class="fa fa-line-chart"></i><span>Music</span>
+<p>
+Music production, mixing, editting, mastering, background music creation
+(all in ableton).
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="services-box">
+<i class="fa fa-laptop"></i><span>Graphic Design</span>
+<p>
+Poster creation, images for websites, album artwork, video editting, photoshop.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Contact -->
+<div class="contact" id="contact">
+<div class="container text-center">
+<h1>Contact Me</h1>
+<p class="text-center">
+Freelance data science work.
+</p>
+<div class="row">
+<div class="col-md-4">
+<i class="fa fa-phone"></i>
+<p>
++31 123456789
+</p>
+</div>
+
+<div class="col-md-4">
+<i class="fa fa-envelope"></i>
+<p>
+contact@jamestwose.com
+</p>
+</div>
+
+<div class="col-md-4">
+<i class="fa fa-internet-explorer"></i>
+<p>
+www.jamestwose.com
+</p>
+</div>
+</div>
+<button type="button" class="btn btn-primary"><i class="fa fa-download"></i>CV</button>
+<button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire Me</button>
+</div>
+<div class="footer text-center">
+<p><i class="fa fa-copyright"></i> James Twose</p>
+</div>
+</div>
+
+</section>
+
+<!-- Smooth scroll -->
+<script src="smooth-scroll.js"></script>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
 </body>
 </html>
