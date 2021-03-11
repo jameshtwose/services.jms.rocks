@@ -65,7 +65,13 @@ body{
 /* About */
 .about {
   padding-top: 100px;
-  margin-bottom: -130px;
+  margin-top: -20px;
+  padding-bottom: 10px;
+  /* background: #f9f9f9; */
+}
+
+.about h3 {
+  margin-bottom: 50px;
 }
 
 .profile-img {
