@@ -12,18 +12,32 @@ body{
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;        /* center items horizontally, in this case */
 }
 
-.user-box{
+/* .user-box{
   top: 25%;
   left: 43%;
   transform: translate(-50%, -50%));
   position: absolute;
+} */
+
+.user-box{
+  /* top: 30%;
+  left: 43%;
+  transform: translate(-50%, -50%)); */
+  position: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
 }
 
 .user-box img {
   border-radius: 50%;
-  width: 250px;
+  width: 350px;
   border: 2px solid #fff;
 }
 
@@ -68,6 +82,11 @@ body{
   margin-top: -20px;
   padding-bottom: 10px;
   /* background: #f9f9f9; */
+}
+
+.about .about-link {
+  color:#900C3F;
+  /* text-decoration: none; */
 }
 
 .about h3 {
@@ -276,6 +295,11 @@ body{
 
 .contact .btn .fa {
   margin-right: 10px;
+}
+
+.contact .email-link {
+  color:#fff;
+  text-decoration: none;
 }
 
 .footer {
