@@ -8,7 +8,7 @@ body{
 #header {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url(img/background_v2.jpg);
+  url(img/cross_CV_pima.png);
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
@@ -95,6 +95,7 @@ body{
 
 .profile-img {
   height: 400px;
+  width: auto;
 }
 
 .nav-bar {
@@ -157,6 +158,16 @@ body{
   margin-bottom: 50px;
 }
 
+.cv .cv-link {
+  color:#743de0;
+  text-decoration: none;
+}
+
+/* .cv .thesis-link:link {
+  color:red;
+  text-decoration: none;
+} */
+
 .timeline {
   list-style-type: none;
   position: relative;
@@ -209,6 +220,7 @@ body{
 .services {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: #f9f9f9;
 }
 
 .services h1 {
@@ -216,7 +228,7 @@ body{
 }
 
 .services-box {
-  background: #f9f9f9;
+  background: #fff;
   padding: 10px;
   margin-top: 20px;
   border-top-right-radius: 50px;
