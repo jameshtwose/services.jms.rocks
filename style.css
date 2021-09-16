@@ -51,6 +51,11 @@ body{
   color: #fff;
 }
 
+.user-box .musician-link {
+  color: #fff;
+  /* text-decoration: none; */
+}
+
 .scroll-btn{
   bottom: 30px;
   position: absolute;
