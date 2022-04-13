@@ -334,7 +334,7 @@ body{
 /* social icons */
 .social-icons {
   top: 50%;
-  transform:translateY(-50%);
+  transform:translateY(-110%);
   position:sticky;
   z-index:1;
   width:80px;
