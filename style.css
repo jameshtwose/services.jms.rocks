@@ -83,7 +83,7 @@ body{
 
 /* About */
 .about {
-  padding-top: 100px;
+  /* padding-top: -20px; */
   margin-top: -20px;
   padding-bottom: 10px;
   /* background: #f9f9f9; */
@@ -92,6 +92,10 @@ body{
 .about .about-link {
   color:#900C3F;
   /* text-decoration: none; */
+}
+
+#about .row {
+  padding-bottom: 100px;
 }
 
 .about h3 {
