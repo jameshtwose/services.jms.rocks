@@ -157,10 +157,11 @@ body{
 
 /* cv */
 .cv {
-  margin-top: -50px;
+  /* margin-top: -50px;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
   background: #f9f9f9;
+  padding: 3%;
 }
 
 .cv h3 {
@@ -170,6 +171,11 @@ body{
 .cv .cv-link {
   color:#743de0;
   text-decoration: none;
+}
+
+.cv .timeline p{
+  padding-top: 0%;
+  padding: 2%;
 }
 
 /* .cv .thesis-link:link {
